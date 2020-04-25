@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.form {
+    width: 100%;
+    background-color:   #ffd11a;
+}
+
+.form h1 {
+    color:  #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 45px;
+}
+
+.form .control-group{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    padding-bottom: 28px;
+}
+
+.form .control-group input {
+    width: 700px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    font-size: 18px;
+    outline: none;
+    border: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.form .control-group .btn {
+    padding: 0px 42px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color:  #ffaa00;
+    color: #fff;
+}
+
+.form .control-group .btn:hover {
+    background-color:  #e69900;
+}
+
+.list {
+    list-style: none;
+    width: 100%;
+}
+
+.list li {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 45px;
+    background-color:  #f2f2f2;
+    color: #000000;
+    opacity: 0;
+    transition: all 2s;
+    cursor: pointer;
+}
+
+.list li:nth-child(odd) {
+    background-color: #bfbfbf;
+}
+
+.list li:hover {
+    background-color:  #8c8c8c;
+}
+
+.list li .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    padding-top: 5px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #000000;
+}
+
+.list li .close:hover {
+    background-color: red;
+    color: #ffffff;
+}
+
+.list li.checked {
+    position: relative;
+    color: #ffffff;
+    background-color:  #4d4d4d;
+    text-decoration: line-through;
+}
+
+.list li.checked:before {
+    content: '';
+    position: absolute;
+    top: 19%;
+    left: 1%;
+    width: 20px;
+    height: 10px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(-45deg);
+}
