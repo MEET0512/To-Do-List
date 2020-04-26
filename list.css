@@ -54,7 +54,7 @@
     color: #fff;
 }
 
-.form .control-group .btn:hover {
+.form .control-group .btn:hover, .form .control-group .btn:focus {
     background-color:  #e69900;
 }
 
